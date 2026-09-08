@@ -1,0 +1,109 @@
+#modal header{
+    display: none;
+}
+
+.custom-button button{
+    color: white !important
+}
+.custom-button .bg-green-custom{
+    --bg-opacity: 1;
+    background-color: #37992a;
+}
+.custom-button .bg-orange-custom{
+    --bg-opacity: 1;
+    background-color: #ca7531;
+}
+.custom-button .bg-blue-custom{
+    --bg-opacity: 1;
+    background-color: #3f83f8;
+}
+.custom-button .bg-red-custom{
+    --bg-opacity: 1;
+    background-color: #f05252;
+}
+.custom-button .bg-green-custom:hover{
+    --bg-opacity: 1;
+    background-color: #24681c;
+}
+.custom-button .bg-orange-custom:hover{
+    --bg-opacity: 1;
+    background-color: #ac652a;
+}
+.custom-button .bg-blue-custom:hover{
+    --bg-opacity: 1;
+    background-color: #3268c5;
+}
+.custom-button .bg-red-custom:hover{
+    --bg-opacity: 1;
+    background-color: #c04646;
+}
+.rounded-none-custom{
+    border-radius: 0;
+}
+.clickable-img:hover {
+    cursor: pointer;
+    border: 1px solid #7e3af2;
+}
+.clickabe-tr:hover {
+    cursor: pointer;
+    border: 1px solid #7e3af2;
+}
+.input-custom-light:disabled {
+    background-color: #f8f8f8;
+    opacity: 1;
+}
+.theme-dark .dark\:input-custom:disabled {
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+/* Scrollbar container */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* Remove spinners in Chrome, Edge, and Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinners in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* global.css or a module.css */
+@media (min-width: 640px) {
+    [data-modal="big"] {
+        max-width: 70rem !important;
+    }
+}
+
+div:has(>#modal) {
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 50;
+}
+
+#modal footer{
+    flex-direction: row !important;
+    margin-top: 0 !important;   /* cancels space-y */
+    margin-bottom: 0 !important;
+}
